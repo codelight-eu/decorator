@@ -1,1 +1,1 @@
-# decorator
+# wp-decorator

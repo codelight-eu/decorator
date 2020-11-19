@@ -1,0 +1,19 @@
+{
+    "name": "codelight/wp-decorator",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mostafa Soufi",
+            "email": "mostafa@codelight.eu"
+        }
+    ],
+    "autoload": {
+		"psr-4": {
+			"Codelight\\WordPressDecorator\\": "src/"
+		}
+	},
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {}
+}
