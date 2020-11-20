@@ -15,13 +15,13 @@ trait DecoratorTrait
      */
     public function __call($name, $arguments)
     {
-        $snakeCaseName = $this->camelToSnakeCase($name);
+        $snakeCaseName = $this->snakeCaseToCamelCase($name);
 
         if (method_exists($this->object, $snakeCaseName)) {
             return call_user_func_array([$this->object, $snakeCaseName], $arguments);
         }
 
-        $class = get_class();
+        $class      = get_class();
         $objectData = print_r($this->object, true);
 
         trigger_error(
@@ -45,7 +45,7 @@ trait DecoratorTrait
      * @param $string
      * @return string
      */
-    protected function camelToSnakeCase($string)
+    protected function snakeCaseToCamelCase(string $string): string
     {
         return ltrim(strtolower(preg_replace('/[A-Z]([A-Z](?![a-z]))*/', '_$0', $string)), '_');
     }

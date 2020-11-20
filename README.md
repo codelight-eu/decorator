@@ -61,12 +61,15 @@ Here are the list of supported classes.
 
 #### Post
 ```php
-use Codelight\WordPressDecorator\WordPress\postDecorator;
+use Codelight\WordPressDecorator\WordPress\PostDecorator;
 $postDecorator = new postDecorator(get_post(1));
 ```
 
 #### User
-soon...
+```php
+use Codelight\WordPressDecorator\WordPress\UserDecorator;
+$userDecorator = new UserDecorator(get_user_by('id', 1));
+```
 
 #### Comment
 soon...
