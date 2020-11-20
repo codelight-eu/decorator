@@ -1,5 +1,5 @@
 # WordPress Decorator
-An useful library for accessing the WordPress's class methods
+A useful library for accessing WordPress's class methods
 
 ## Installation
 
@@ -18,17 +18,17 @@ try {
 
     print sprintf('ID: %s', $customerDecorator->getId());
     print sprintf('Email: %s', $customerDecorator->getEmail());
-    die();
 
 } catch (Exception $e) {
     print $e->getMessage();
-    die();
 }
 ```
 
 You may interested to extend the class and putting your methods as well.
 
 ```php
+use Codelight\WordPressDecorator\WooCommerce\CustomerDecorator;
+
 class MyCustomerDecoratorClass extends CustomerDecorator
 {
     public function __construct(WC_Customer $customer)
@@ -48,11 +48,9 @@ try {
     $customerDecorator = new MyCustomerDecoratorClass($customer);
 
     print sprintf('Admin color: %s', $customerDecorator->getAdminColor());
-    die();
 
 } catch (Exception $e) {
     print $e->getMessage();
-    die();
 }
 ```
 
