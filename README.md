@@ -1,5 +1,5 @@
 # WordPress Decorator
-A useful library for accessing the WordPress's class methods
+An useful library for accessing the WordPress's class methods
 
 ## Installation
 
