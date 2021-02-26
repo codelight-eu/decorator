@@ -4,7 +4,7 @@ A useful library for accessing WordPress's class methods
 ## Installation
 
 ```bash
-$ composer require codelight/wp-decorator dev-master
+$ composer require codelight/wp-decorator dev-main
 ```
 
 ## Quick Start
