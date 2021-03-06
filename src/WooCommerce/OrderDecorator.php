@@ -6,11 +6,11 @@ use Codelight\WordPressDecorator\DecoratorTrait;
 use WC_Order;
 
 /**
- * Extends \WC_Order with various custom functionality
+ * Extends \WC_Order with various custom functionality.
  *
- * Class Order Decorator
+ * Class OrderDecorator
  *
- * @package Codelight\WordPressDecorator
+ * @package Codelight\WordPressDecorator\WooCommerce
  *
  * @method getOrderNumber()
  * @method getFormattedBillingAddress()
